@@ -15,7 +15,7 @@ class Calculator
     protected $payment_type;
 
     /**
-     * @var int[] 決済手数料
+     * @var int[] 税抜決済手数料
      */
     protected $fees = [
         9999 => 300,
