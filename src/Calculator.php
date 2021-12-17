@@ -72,7 +72,7 @@ class Calculator
      * @param null $date
      * @return int
      */
-    private function getTaxRate($date = null)
+    protected function getTaxRate($date = null)
     {
         return 0.1;
     }
