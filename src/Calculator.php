@@ -54,6 +54,8 @@ class Calculator
     }
 
     /**
+     * 決済手数料を返す
+     *
      * @param null $date 手数料計算日
      * @return array|float[]|int[]
      */
