@@ -27,7 +27,7 @@ class CalculatorTest extends TestCase
     /**
      * @return void
      */
-    public function init()
+    public function testInit()
     {
         $this->expectException(InvalidArgumentException::class);
 
