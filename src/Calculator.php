@@ -5,6 +5,7 @@ namespace Tsmsogn\KuronekoDaibikiFee;
 
 
 use Tsmsogn\KuronekoDaibikiFee\Exception\DaibikiLimitExceededException;
+use Tsmsogn\KuronekoDaibikiFee\Exception\InvalidArgumentException;
 
 class Calculator
 {
@@ -26,7 +27,7 @@ class Calculator
     public function __construct($payment_type)
     {
         if (!PaymentType::isValid($payment_type)) {
-            throw new Exception\InvalidArgumentException();
+            throw new InvalidArgumentException();
         }
 
         $this->payment_type = $payment_type;
