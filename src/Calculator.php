@@ -17,7 +17,7 @@ class Calculator
     /**
      * @var int[] 税抜決済手数料
      */
-    protected $tax_exclude_fees = [
+    protected $tax_excluded_fees = [
         9999 => 300,
         29999 => 400,
         99999 => 600,
@@ -63,7 +63,7 @@ class Calculator
     {
         return array_map(function ($fee) use ($date) {
             return $fee + $fee * $this->getTaxRate($date);
-        }, $this->tax_exclude_fees);
+        }, $this->tax_excluded_fees);
     }
 
     /**
