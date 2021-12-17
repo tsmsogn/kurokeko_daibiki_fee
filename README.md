@@ -3,7 +3,9 @@
 
 ## Installation
 
+```shell
 composer require tsmsogn/kuroneko_daibiki_fee
+```
 
 ## Usage
 
