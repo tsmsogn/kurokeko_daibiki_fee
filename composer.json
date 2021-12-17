@@ -8,7 +8,7 @@
     }
   ],
   "require": {
-    "php": ">=7.3",
+    "php": ">=7.4",
     "myclabs/php-enum": "^1.8"
   },
   "require-dev": {
